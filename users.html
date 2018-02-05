@@ -1,0 +1,16 @@
+<div class="add">
+<input type="text" ng-model="current.username">
+<input type="button" value="addUser" ng-click="addUser(current.username)">
+</div>
+<table>
+  <tr ng-repeat="item in users">
+    <td>{{$index+1}}</td>
+    <td>{{item.user}}</td>
+    <td>
+      <input type="button" value="ShowCourses" ng-click="showCourses(item)">
+    </td>
+    <td>
+      <input type="button" value="DeleteUser" ng-click="deleteUser(item)">
+    </td>
+  </tr>
+</table>

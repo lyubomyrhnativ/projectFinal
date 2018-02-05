@@ -1,0 +1,61 @@
+#wrap{
+  width:900px;
+  margin:20px auto;
+  border: 2px green solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Verdana;
+  font-size:14px;
+}
+#wrap .header{
+  background-color: green;
+  color:white;
+  font-weight:bold;
+}
+#wrap .header .name{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#wrap .add{
+    text-align: center;
+    background-color: limegreen;
+    padding: 10px;
+    margin:10px 0;
+}
+#wrap table{
+  margin:20px auto;
+}
+#wrap table td{
+  padding:10px;
+  border:1px white solid;
+  background-color: limegreen;
+  color:white;
+  font-size:13px;
+}
+#wrap input[type='text']{
+width:400px;
+border:3px green solid;
+border-radius:5px;
+color:green;
+margin-bottom: 5px;
+padding: 5px;
+}
+#wrap input[type='button']{
+background-color: green;
+color:white;
+border:3px green solid;
+border-radius:5px;
+font-weight:bold;
+padding: 5px;
+}
+#wrap input[type='button']:hover{
+background-color: lightgreen;
+color:black;
+}
+#wrap .add div{
+  text-align: left;
+  font-size:14px;
+  color:white;
+  margin:5px;
+}
+

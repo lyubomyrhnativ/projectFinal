@@ -1,0 +1,22 @@
+
+<input type="button" value="Back" ng-click="showUsers()">
+<div class="add">
+  <div>Слухач: {{current.user.user}}</div>
+  <div>Кількість курсів- {{current.user.courses.length}}</div>
+</div>
+<div class="add">
+<input type="text" ng-model="current.course">
+<input type="button" value="addCourse" ng-click="addCourse(current.course, current.user)">
+</div>
+<table>
+  <tr ng-repeat="item in current.user.courses">
+    <td>{{$index+1}}</td>
+    <td>{{item.name}}</td>
+    <td>
+      <input type="checkbox" ng-model="item.bool" ng-click="checkCourse(item,current.user)">
+    </td>
+    <td>
+      <input type="button" value="DeleteCourse" ng-click="deleteCourse(item,current.user)">
+    </td>
+  </tr>
+  <table>
